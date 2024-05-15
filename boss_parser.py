@@ -16,7 +16,7 @@ def has_specific_child(tag):
 
 def get_attribute(heading, atribute):
     atributes = []
-    next_element = heading.find_next_sibling('ul')
+    next_element = heading.find_next_sibling()
     lis = next_element.find_all('li')
     for li in lis:
         text = li.text.strip()
